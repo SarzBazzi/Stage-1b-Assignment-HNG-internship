@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testable Profile Card</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <article class="profile-card" data-testid="test-profile-card">
+            
+            <figure class="profile-avatar-container">
+                <img src="https://i.pravatar.cc/300" alt="Profile picture of a frontend wizard" class="profile-avatar" data-testid="test-user-avatar">
+            </figure>
+
+            <div class="profile-content">
+                <header>
+                    <h2 data-testid="test-user-name">Alex Developer</h2>
+                </header>
+
+                <p class="profile-bio" data-testid="test-user-bio">
+                    Frontend wizard passionate about accessibility, semantic HTML, and building beautiful, test-driven user interfaces.
+                </p>
+
+                <div class="profile-time-container" aria-live="polite">
+                    <span>Epoch Time (ms): </span>
+                    <span data-testid="test-user-time" id="user-time"></span>
+                </div>
+
+                <section class="profile-lists">
+                    <div class="list-section">
+                        <h3>Hobbies</h3>
+                        <ul data-testid="test-user-hobbies">
+                            <li>Writing clean code</li>
+                            <li>Reading Sci-Fi</li>
+                            <li>Hiking</li>
+                        </ul>
+                    </div>
+                    <div class="list-section">
+                        <h3>Dislikes</h3>
+                        <ul data-testid="test-user-dislikes">
+                            <li>Unsemantic HTML</li>
+                            <li>Flaky tests</li>
+                            <li>Cold coffee</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <nav aria-label="Social Links">
+                    <ul class="social-links" data-testid="test-user-social-links">
+                        <li><a href="https://github.com" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-github">GitHub</a></li>
+                        <li><a href="https://twitter.com" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-twitter">Twitter</a></li>
+                        <li><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-linkedin">LinkedIn</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </article>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
